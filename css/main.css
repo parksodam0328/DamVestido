@@ -1,0 +1,62 @@
+@font-face {
+  font-family: 'NotoSansCJKkr-Regular'; src: url(font/NotoSansCJKkr-Regular.otf) format('truetype');
+}
+html, body {
+  width: 100%; height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family:NotoSansCJKkr-Regular;
+}
+.topnav {
+  overflow: hidden;
+  background-color: #fff;
+  width: 80%;
+  border-top: 3px solid #36B1BF;
+  border-bottom: 3px solid #36B1BF;
+  padding: 15px 16px;
+
+}
+
+.topnav a {
+  float: left: ;
+  color: #F23C50;
+  text-align: center;
+  font-weight: 700;
+  font-size: 18px;
+  text-align: center;
+  padding: 15px 20px;
+  text-decoration: none;
+  width: 12.5%;
+}
+
+.topnav a:hover {
+  color: #FF5F83;
+  text-shadow: 2px 2px #E9F1DF;
+}
+
+.information {
+  color: #36B1BF;
+  text-align: right;
+  font-weight: 500;
+  width: 90%;
+  padding: 15px 10px;
+  margin-top: 20px;
+}
+
+.information a{
+  color: #36B1BF;
+  text-decoration: none;
+}
+.information a:hover{
+  color: #36B1BF;
+  text-shadow: 2px 2px #E9F1DF;
+}
+
+.bottom {
+  width:80%;
+  height:70px;
+  background: #36B1BF;
+  text-align: left;
+  padding: 10px 10px;
+  line-height: normal;
+}
