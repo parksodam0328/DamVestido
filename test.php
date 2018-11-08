@@ -2,11 +2,11 @@
 
 $db_host = "localhost";
 
-$db_user = "parksodam0328";
+$db_user = "";
 
-$db_passwd = "Ppsjdh198603281!";
+$db_passwd = "";
 
-$db_name = "parksodam0328";
+$db_name = "";
 
 header('Content-Type: text/html; charset=utf-8');
 
