@@ -7,7 +7,7 @@
  $conn = mysql_connect($host, $dbUser, $dbPW);
  $dbName = mysql_select_db('parksodam0328', $conn);
  mysql_query("SET NAMES utf8");
- $id=$_POST['id'];
+
  $userName = $_POST['userName'];
  $userID = $_POST['userID'];
  $userPW = $_POST['userPW'];
