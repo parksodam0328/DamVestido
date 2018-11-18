@@ -31,8 +31,10 @@
    if(!$result){
      echo 'database insert error';
    }else{
+     session_start();
+     $_SESSION['userID'] = $userID;
      echo "<script>alert($userName.'님 회원가입을 축하드립니다!');</script>";
-     echo "<meta http-equiv='Refresh' content='5;url=../outerShop.php'>";
+     echo "<meta http-equiv='Refresh' content='0;url=../index.php'>";
    }
  }else{
    echo "<script>alert('아이디가 중복되었습니다! 다시 입력해주세요!');history.go(-1);</script>";

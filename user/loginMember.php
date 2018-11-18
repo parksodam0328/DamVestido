@@ -19,7 +19,9 @@
  if($checkID == 0){
    echo "<script>alert('회원정보가 없습니다. 다시 로그인해주세요!');</script>";
  }else{
+   session_start();
+   $_SESSION['userID'] = $userID;
     echo "<script>alert('로그인!');</script>";
-    echo "<meta http-equiv='Refresh' content='1;url=../outerShop.php'>";
+    echo "<meta http-equiv='Refresh' content='0;url=../index.php'>";
  }
 ?>

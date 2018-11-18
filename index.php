@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<?header('Content-Type: text/html; charset=utf-8');?>
 <html lang="utf8" dir="ltr">
   <head>
     <meta charset="utf-8">

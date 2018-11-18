@@ -1,4 +1,5 @@
   <!DOCTYPE html>
+  <?php session_start(); header('Content-Type: text/html; charset=utf-8');?>
   <html lang="utf-8" dir="ltr">
   <head>
     <meta charset="utf-8">
@@ -12,13 +13,26 @@
         <img style="margin-top:2%" width="350px" src="images/logo.png">
       </a>
       </center>
+      <?
+           if(!isset($_SESSION['userID'])) {?>
       <div class="information">
         <a href="user/login.php">로그인 </a>|
         <a href="user/join.php"> 회원가입 </a>|
         <a href="user/cart.php"> 장바구니 </a>|
-        <a href="user/myPage.php"> 마이페이지 </a>|
         <a href="user/question.php"> 문의</a>
       </div>
+        <?}else{
+          $user_id = $_SESSION['userID'];
+          ?>
+          <div class="information">
+            <a href="#"><b><?=$user_id?> 님 </b></a>|
+            <a href="user/logout.php">로그아웃 </a>|
+            <a href="user/cart.php"> 장바구니 </a>|
+            <a href="user/myPage.php"> 마이페이지 </a>|
+            <a href="user/question.php"> 문의</a>
+          </div>
+        <?}?>
+
       <center>
       <div class="topnav">
         <a href="outerShop.php">아우터</a>

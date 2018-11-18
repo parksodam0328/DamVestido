@@ -91,7 +91,7 @@
   </head>
   <body>
     <center>
-      <img src="../images/logo.png" width="300px" style="margin-top:30px; margin-bottom:30px;">
+      <a href="../index.php"><img src="../images/logo.png" width="300px" style="margin-top:30px; margin-bottom:30px;"></a>
     </center>
   <form name="userForm" method="post" action="memberSave.php">
     <div class="loginForm" style="padding-top:10px; padding-left:30px">
